@@ -1,0 +1,101 @@
+@extends ('layouts.app')
+@section('content')
+    @component('layouts.components.breadcrumb')
+        @slot('title')
+            <a class="link" href="{{route('access.users.index')}}">Controle de acesso</a>
+        @endslot
+        @slot('page')
+            <li class="breadcrumb-item active" aria-current="page">Adicionar novo usuario</li>
+        @endslot
+    @endcomponent
+    <div class="content" >
+        @include('adminlte-templates::common.errors')
+        @component('layouts.components.table_box')
+            @slot('classe')
+                col-md-12
+            @endslot
+            @slot('color')
+                success
+            @endslot
+            @slot('include')
+                @component('layouts.components.form')
+                    @slot('route')
+                        {{ route('access.users.store') }}
+                    @endslot
+                    @slot('method')
+                        post
+                    @endslot
+                    @slot('inputs')
+                        @component('layouts.components.text_input')
+                            @slot('col')
+                                col-md-6
+                            @endslot
+                            @slot('labelName')
+                                nome
+                            @endslot
+                            @slot('placeholder')
+                                Nome
+                            @endslot
+                        @endcomponent
+                        @component('layouts.components.text_input')
+                            @slot('col')
+                                col-md-6
+                            @endslot
+                            @slot('labelName')
+                                apelido
+                            @endslot
+                            @slot('placeholder')
+                                Sobrenome
+                            @endslot
+                        @endcomponent
+                        @component('layouts.components.text_input')
+                            @slot('col')
+                                col-md-6
+                            @endslot
+                            @slot('labelName')
+                                telefone
+                            @endslot
+                            @slot('placeholder')
+                                Telefone
+                            @endslot
+                        @endcomponent
+                        <div class="box-header with-border my-box-header col-md-12" style="margin-bottom:15px;margin-top: 15px;">
+                            <h3 class="box-title">Dados de Acesso</h3>
+                        </div>
+                        @component('layouts.components.email_input')
+                            @slot('col')
+                                col-md-6
+                            @endslot
+                            @slot('labelName')
+                                email
+                            @endslot
+                            @slot('placeholder')
+                                Email
+                            @endslot
+                        @endcomponent
+                        @component('layouts.components.password_input')
+                            @slot('col')
+                                col-md-6
+                            @endslot
+                            @slot('labelName')
+                                password
+                            @endslot
+                            @slot('placeholder')
+                                Senha
+                            @endslot
+                        @endcomponent
+                    @endslot
+                    @slot('divClass')
+                        col-md-12
+                    @endslot
+                    @slot('buttonStyle')
+                        success
+                    @endslot
+                    @slot('submitButton')
+                        Criar Novo Usuario
+                    @endslot
+                @endcomponent
+            @endslot
+        @endcomponent
+    </div>
+@endsection

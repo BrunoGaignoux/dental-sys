@@ -1,0 +1,43 @@
+.login-page {
+    background: url("../image/background.jpg") center no-repeat !important;
+}
+
+.btn-success {
+    background-color: #6ebbab;
+}
+
+.sidebar-menu .list-menu-item a {
+    color: #6ebbab !important;
+}
+
+.sidebar-menu li.active a {
+    background-color: #6ebbab !important;
+    color: #fff !important;
+}
+
+.sidebar-menu .list-menu-item a:hover {
+    background-color: #6ebbab !important;
+    color: #fff !important;
+}
+
+.link {
+    color: #6ebbab !important;
+}
+
+.dropdown-menu li.user-header {
+    background-color: #6ebbab !important;
+}
+
+.dropdown-menu li.user-footer {
+    background-color: #ffffff !important;
+}
+
+.navbar-custom-menu .navbar-nav li a.dropdown-toggle {
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.main-header .navbar .sidebar-toggle {
+    border-right: none !important;
+    border-left: none !important;
+}

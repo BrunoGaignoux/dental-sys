@@ -1,0 +1,201 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use \Illuminate\Support\Facades\DB;
+
+class ClinicTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('clinic_data')->insert([
+            'codigo_unidade_uranet' => NULL,
+            'codigo_endereco' => 1,
+            'login_unidade_uranet' => NULL,
+            'cnpj' => '24987580000110',
+            'razaosocial' => 'Albuquerque Clinica Odontologica Ltda.',
+            'fantasia' => 'OSASCO',
+            'proprietario' => '',
+            'fundacao' => '',
+            'tel1_cod' => '55',
+            'tel1_ddd' => '11',
+            'telefone1' => '1146247215',
+            'tel2_cod' => '55',
+            'tel2_ddd' => '',
+            'telefone2' => '',
+            'fax_cod' => '55',
+            'fax_ddd' => '',
+            'fax' => '',
+            'email' => 'wanderley@itwv.com.br',
+            'web' => '',
+            'token' => NULL,
+            'senha_prefeitura' => NULL,
+            'senha_certificado' => NULL,
+            'inscricaomunicipal' => NULL,
+            'idioma' => 'pt_br',
+            'logomarca' => NULL,
+            'status' => '1',
+            'datastatus' => NULL,
+            'dataimplantacao' => NULL
+        ]);
+
+        DB::table('clinic_data')->insert([
+            'codigo_unidade_uranet' => NULL,
+            'codigo_endereco' => 2,
+            'login_unidade_uranet' => NULL,
+            'cnpj' => '07384222907',
+            'razaosocial' => 'ITWV Soluçoes Inteligentes',
+            'fantasia' => 'ITWV',
+            'proprietario' => 'Ana',
+            'fundacao' => '2006',
+            'tel1_cod' => '55',
+            'tel1_ddd' => '11',
+            'telefone1' => '11985769808',
+            'tel2_cod' => '55',
+            'tel2_ddd' => '11',
+            'telefone2' => '43821088',
+            'fax_cod' => '55',
+            'fax_ddd' => '',
+            'fax' => '',
+            'email' => 'ana@itwv.com.br',
+            'web' => '',
+            'token' => NULL,
+            'senha_prefeitura' => NULL,
+            'senha_certificado' => NULL,
+            'inscricaomunicipal' => NULL,
+            'idioma' => 'pt_br',
+            'logomarca' => NULL,
+            'status' => '1',
+            'datastatus' => NULL,
+            'dataimplantacao' => NULL
+        ]);
+
+        DB::table('clinic_data')->insert([
+            'codigo_unidade_uranet' => NULL,
+            'codigo_endereco' => 3,
+            'login_unidade_uranet' => NULL,
+            'cnpj' => '15262626000143',
+            'razaosocial' => 'SP Implantes Osasco',
+            'fantasia' => 'PACAEMBU',
+            'proprietario' => 'Francismar Albuquerq',
+            'fundacao' => '2000',
+            'tel1_cod' => '55',
+            'tel1_ddd' => '11',
+            'telefone1' => '1146247215',
+            'tel2_cod' => '55',
+            'tel2_ddd' => '',
+            'telefone2' => '',
+            'fax_cod' => '55',
+            'fax_ddd' => '',
+            'fax' => '',
+            'email' => 'albuquerque@sposasco.com',
+            'web' => '',
+            'token' => NULL,
+            'senha_prefeitura' => NULL,
+            'senha_certificado' => NULL,
+            'inscricaomunicipal' => NULL,
+            'idioma' => 'pt_br',
+            'logomarca' => NULL,
+            'status' => '1',
+            'datastatus' => NULL,
+            'dataimplantacao' => NULL
+        ]);
+
+        DB::table('clinic_data')->insert([
+            'codigo_unidade_uranet' => NULL,
+            'codigo_endereco' => 4,
+            'login_unidade_uranet' => NULL,
+            'cnpj' => '23031557000195',
+            'razaosocial' => 'RJ BOTAFOGO CLINICA ODONTOLOGICA LTDA.',
+            'fantasia' => 'SP IMPLANTES RJ',
+            'proprietario' => 'TEGOZ HOLDING LTDA',
+            'fundacao' => '2015',
+            'tel1_cod' => '55',
+            'tel1_ddd' => '22',
+            'telefone1' => '2136273249',
+            'tel2_cod' => NULL,
+            'tel2_ddd' => NULL,
+            'telefone2' => '',
+            'fax_cod' => NULL,
+            'fax_ddd' => NULL,
+            'fax' => '',
+            'email' => 'SPIMPLANTES.RJBOTAFOGO@GMAIL.COM',
+            'web' => 'HTTP://WWW.SPIMPLANTES.COM.BR',
+            'token' => NULL,
+            'senha_prefeitura' => NULL,
+            'senha_certificado' => NULL,
+            'inscricaomunicipal' => NULL,
+            'idioma' => 'pt_br',
+            'logomarca' => NULL,
+            'status' => '1',
+            'datastatus' => NULL,
+            'dataimplantacao' => NULL
+        ]);
+
+        DB::table('clinic_data')->insert([
+            'codigo_unidade_uranet' => NULL,
+            'codigo_endereco' => 5,
+            'login_unidade_uranet' => NULL,
+            'cnpj' => '23125049000176',
+            'razaosocial' => 'DF Hospital Odontologico Ltda.',
+            'fantasia' => 'SP Implantes DF',
+            'proprietario' => NULL,
+            'fundacao' => '2015',
+            'tel1_cod' => '55',
+            'tel1_ddd' => '61',
+            'telefone1' => '6130279596',
+            'tel2_cod' => NULL,
+            'tel2_ddd' => NULL,
+            'telefone2' => NULL,
+            'fax_cod' => NULL,
+            'fax_ddd' => NULL,
+            'fax' => NULL,
+            'email' => NULL,
+            'web' => 'http://www.spimplantes.com.br',
+            'token' => NULL,
+            'senha_prefeitura' => NULL,
+            'senha_certificado' => NULL,
+            'inscricaomunicipal' => NULL,
+            'idioma' => 'pt_br',
+            'logomarca' => NULL,
+            'status' => '1',
+            'datastatus' => NULL,
+            'dataimplantacao' => NULL
+        ]);
+
+        DB::table('clinic_data')->insert([
+            'codigo_unidade_uranet' => '',
+            'codigo_endereco' => 6,
+            'login_unidade_uranet' => '',
+            'cnpj' => '24870007000122',
+            'razaosocial' => 'DIGIDENTAL SOLUTIONS LTDA.',
+            'fantasia' => 'DIGIDENTAL CLINIC',
+            'proprietario' => 'DIGIDENTAL SOLUTIONS',
+            'fundacao' => '2017',
+            'tel1_cod' => '55',
+            'tel1_ddd' => '11',
+            'telefone1' => '1140208373',
+            'tel2_cod' => NULL,
+            'tel2_ddd' => NULL,
+            'telefone2' => '',
+            'fax_cod' => NULL,
+            'fax_ddd' => NULL,
+            'fax' => '',
+            'email' => 'ALBUQUEQUE@SPIMPLANTES.COM.BR',
+            'web' => 'HTTP://WWW.DIGIDENTALSOLUTIONS.COM.BR',
+            'token' => NULL,
+            'senha_prefeitura' => NULL,
+            'senha_certificado' => NULL,
+            'inscricaomunicipal' => NULL,
+            'idioma' => 'pt_br',
+            'logomarca' => NULL,
+            'status' => '1',
+            'datastatus' => '2017-10-31',
+            'dataimplantacao' => '2017-10-31'
+        ]);
+    }
+}
