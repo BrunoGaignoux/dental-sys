@@ -15,6 +15,12 @@ class CreatePaymentMethodsTable extends Migration
     {
         Schema::create('payment_methods', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->integer('codigo_plano_contas')->unsigned();
+            $table->string('descricao')->nullable();
+            $table->integer('limite')->nullable();
+            $table->integer('maximo')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });

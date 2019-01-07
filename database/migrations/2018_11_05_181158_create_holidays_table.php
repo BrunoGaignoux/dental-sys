@@ -15,6 +15,13 @@ class CreateHolidaysTable extends Migration
     {
         Schema::create('holidays', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->string('estado')->nullable();
+            $table->string('cidade')->nullable();
+            $table->string('titulo')->nullable();
+            $table->integer('todos')->nullable();
+            $table->string('dia_mes')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });

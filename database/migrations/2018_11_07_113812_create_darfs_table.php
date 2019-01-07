@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMedicalRecordsTable extends Migration
+class CreateDarfsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateMedicalRecordsTable extends Migration
      */
     public function up()
     {
-        Schema::create('medical_records', function (Blueprint $table) {
+        Schema::create('darfs', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->timestamp('deleted_at')->nullable();
         });
     }
 
@@ -27,6 +26,6 @@ class CreateMedicalRecordsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('medical_records');
+        Schema::dropIfExists('darfs');
     }
 }

@@ -15,6 +15,13 @@ class CreatePackagesTable extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->integer('tipo_tabela')->nullable();
+            $table->string('descricao')->nullable();
+            $table->float('valor')->nullable();
+            $table->integer('tipo')->nullable();
+            $table->string('tipo_valor')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });

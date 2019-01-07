@@ -15,6 +15,11 @@ class CreatePaymentMethodsCardTable extends Migration
     {
         Schema::create('payment_methods_card', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->integer('codigo_forma_pagamento')->unsigned();
+            $table->string('descricao')->nullable();
+            $table->double('taxa_administracao')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProfessionTable extends Migration
+class CreateCostCenterTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateProfessionTable extends Migration
      */
     public function up()
     {
-        Schema::create('profession', function (Blueprint $table) {
+        Schema::create('cost_center', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('codigo_clinica')->unsigned();
+            $table->string('codigo_interno')->nullable();
             $table->string('descricao')->nullable();
             $table->integer('status')->nullable();
             $table->timestamps();
@@ -30,6 +31,6 @@ class CreateProfessionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profession');
+        Schema::dropIfExists('cost_center');
     }
 }

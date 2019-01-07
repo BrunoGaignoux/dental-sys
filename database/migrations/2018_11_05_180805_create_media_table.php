@@ -15,6 +15,10 @@ class CreateMediaTable extends Migration
     {
         Schema::create('media', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->string('codigo_uranet')->nullable();
+            $table->string('descricao')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });

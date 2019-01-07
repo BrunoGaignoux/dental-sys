@@ -15,6 +15,13 @@ class CreateRestrictionTable extends Migration
     {
         Schema::create('restriction', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->integer('codigo_pacientes')->unsigned();
+            $table->integer('codigo_pacientes_status')->unsigned();
+            $table->integer('codigo_contas_receber')->unsigned();
+            $table->string('tabela')->nullable();
+            $table->string('cpf')->nullable();
+            $table->string('motivo')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });

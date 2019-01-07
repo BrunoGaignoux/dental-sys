@@ -15,6 +15,10 @@ class CreateAdditionalInfoTreatmentTable extends Migration
     {
         Schema::create('additional_info_treatment', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->string('titulo')->nullable();
+            $table->text('descricao')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
         });
