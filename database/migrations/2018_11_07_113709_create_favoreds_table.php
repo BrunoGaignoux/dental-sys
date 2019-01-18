@@ -15,7 +15,13 @@ class CreateFavoredsTable extends Migration
     {
         Schema::create('favoreds', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->integer('codigo_status')->nullable();
+            $table->string('documento')->nullable();
+            $table->string('descricao')->nullable();
+            $table->string('razaosocial')->nullable();
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 

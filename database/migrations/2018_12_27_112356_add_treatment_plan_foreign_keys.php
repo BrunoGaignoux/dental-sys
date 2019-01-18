@@ -15,7 +15,9 @@ class AddTreatmentPlanForeignKeys extends Migration
     {
         Schema::table('treatment_plan', function (Blueprint $table) {
             $table->foreign('codigo_clinica')->references('id')->on('clinic_data');
-            $table->foreign('codigo_tipo_conta')->references('id')->on('accounts_type');
+            $table->foreign('codigo_paciente')->references('id')->on('patients');
+            $table->foreign('codigo_dentista')->references('id')->on('dentist');
+            $table->foreign('codigo_nivel')->references('id')->on('user_type');
         });
     }
 
@@ -27,7 +29,7 @@ class AddTreatmentPlanForeignKeys extends Migration
     public function down()
     {
         Schema::table('treatment_plan', function (Blueprint $table) {
-            $table->dropForeign(['codigo_clinica','codigo_tipo_conta']);
+            $table->dropForeign(['codigo_clinica','codigo_paciente','codigo_dentista','codigo_nivel']);
         });
     }
 }

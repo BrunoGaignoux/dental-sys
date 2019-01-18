@@ -15,7 +15,10 @@ class CreateDarfsTable extends Migration
     {
         Schema::create('darfs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('descricao')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 

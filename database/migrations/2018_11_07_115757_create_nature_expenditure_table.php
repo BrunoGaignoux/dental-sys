@@ -20,6 +20,7 @@ class CreateNatureExpenditureTable extends Migration
             $table->increments('descricao')->nullable();
             $table->increments('status')->nullable();
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 

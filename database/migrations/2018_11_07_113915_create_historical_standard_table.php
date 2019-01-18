@@ -15,7 +15,12 @@ class CreateHistoricalStandardTable extends Migration
     {
         Schema::create('historical_standard', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('codigo_clinica')->unsigned();
+            $table->integer('codigo_padrao')->nullable();
+            $table->string('descricao')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 

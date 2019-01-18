@@ -18,9 +18,9 @@ class CreateTreatmentPlanTable extends Migration
             $table->integer('codigo_clinica')->unsigned();
             $table->integer('codigo_paciente')->unsigned();
             $table->integer('codigo_nivel')->unsigned();
-            $table->integer('codigo_indicacao')->unsigned();
+            $table->integer('codigo_dentista')->unsigned();
+            $table->integer('codigo_indicacao')->nullable();
             $table->string('codigo_anterior')->nullable();
-            $table->integer('codigo_dentista')->nullable();
             $table->integer('confirmado')->nullable();
             $table->date('confirmado_data')->nullable();
             $table->integer('numero_tratamento')->nullable();
